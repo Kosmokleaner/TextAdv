@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TextAdv</title>
+</head>
+<body>
+  <h1>TextAdv headline</h1>
+  <h2>Second headline</h2>
+  <p>
+    Once apon a time there was a little boy. He ...
+  </p>
+
+  <p id="output">test</p>
+
+  <input type="text" id="input" onchange="getInput()" />
+
+  <script>
+
+    function getInput() {
+      var inputText = document.getElementById("input").value;
+      console.log("debug " + inputText);
+      document.getElementById("output").innerHTML = inputText;
+    }
+
+    // console.log("the number is " + (120 + 12));
+    document.getElementById("output").innerHTML = "Test Output";
+
+
+  </script>
+
+</body>
+</html>

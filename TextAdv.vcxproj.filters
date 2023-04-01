@@ -3,4 +3,7 @@
   <ItemGroup>
     <ClCompile Include="TextAdv.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="TextAdv.html" />
+  </ItemGroup>
 </Project>

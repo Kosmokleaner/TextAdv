@@ -141,6 +141,9 @@
   <ItemGroup>
     <ClCompile Include="TextAdv.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="TextAdv.html" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
