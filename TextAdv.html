@@ -1,32 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TextAdv</title>
+  <title>TextAdv Version 0.01</title>
+  <link rel="stylesheet" href="TextAdv.css">
 </head>
 <body>
-  <h1>TextAdv headline</h1>
-  <h2>Second headline</h2>
+  <h1>The adventure of a lifetime</h1>
   <p>
-    Once apon a time there was a little boy. He ...
+    Welcome to this text adventure. You can type in commands and I will
+    try to responds as best as I can. You can advance the plot of our story.<br><br>
+    Example commands:<br>
+    go north, south, west, east, help, look, inspect, take, pull, open, close, put
   </p>
 
-  <p id="output">test</p>
+  <!-- this is where print() will add new paragraphs -->
+  <a id="output"></a>
 
-  <input type="text" id="input" onchange="getInput()" />
-
-  <script>
-
-    function getInput() {
-      var inputText = document.getElementById("input").value;
-      console.log("debug " + inputText);
-      document.getElementById("output").innerHTML = inputText;
-    }
-
-    // console.log("the number is " + (120 + 12));
-    document.getElementById("output").innerHTML = "Test Output";
-
-
-  </script>
-
+  > <input type="text" id="input" onchange="onInput()" autofocus />
+  <script src="AdvEngine.js"></script>
+  <script src="AdvGame.js"></script>
 </body>
 </html>
